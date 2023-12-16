@@ -9,11 +9,11 @@ class EjemploControllers extends Token{
    private $header=[];
    public function __construct()
    {
-      $this->header[1] = "Ejemplos";
+      $this->header[1] = "Auth";
    }
    public function index(){
       $this->header[2] = "Ejemplos2";
-    return Utils::view('Ejemplo.index',$data=[],$this->header);
+    return Utils::view('Auth.sign-in',$data=[],$this->header);
  }
    /**SE ENCARGA DE CARGAR LOS DATOS */
     public function loadMsg()
